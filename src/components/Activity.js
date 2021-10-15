@@ -46,8 +46,11 @@ const Activity = ({ title, category, current, previous }) => {
             <div className='activity'>
                 <p>{activity.title}</p>
                 <img src="/assets/img/icon-ellipsis.svg" alt="" />
+                <div className='time'>
                 <h2>{current}hrs</h2>
                 <p>Last Week - {previous}hrs</p>
+                </div>
+              
             </div>
         </div>
     );

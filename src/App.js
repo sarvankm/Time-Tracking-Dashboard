@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import Activity from './components/Activity';
 import Report from './components/Report';
 import data from './data.json'
+import './app.css'
 const App = () => {
     const [category, setCategory] = useState("weekly");
     let activity='';
@@ -38,9 +39,12 @@ const App = () => {
     }
     
     return (
-        <div>
+        <div className='container'>
             <Report setCategory={setCategory}/>
+            <div className='cards' style={{width:'70%',display:'flex',flexWrap:'wrap'}}>
             {activity}
+            </div>
+            
         </div>
     );
 }

@@ -5,8 +5,11 @@ const Report = ({ setCategory }) => {
         <div className='report-container'>
             <div className='user-info'>
                 <img src="/assets/img/image-jeremy.png" alt="" />
+                <div className='title'>
                 <p>Report for</p>
                 <h2>Jeremy Robson</h2>
+                </div>
+        
             </div>
             <div className='navigation'>
                 <a href="#" onClick={(e) => {setCategory('daily');e.preventDefault()}}>Daily</a>

@@ -3,9 +3,10 @@
   box-sizing: border-box; }
 
 .report-container {
-  width: 15%;
+  width: 20%;
   background: #1D204B;
-  border-radius: 10px; }
+  border-radius: 10px;
+  margin-top: 20px; }
   .report-container .user-info {
     background-color: #5746EA;
     border-radius: 10px; }
