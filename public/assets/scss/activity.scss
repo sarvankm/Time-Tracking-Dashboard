@@ -1,0 +1,47 @@
+.card-container{
+    width: 15%;
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    .icon{
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+        img{
+            margin-top: -2px;
+        }
+    }
+    .activity{
+        background: #1D204B;
+        border-radius: 10px;
+        position: relative;
+        margin-top: -43px;
+        padding-bottom: 1px;
+        
+        &:hover{
+            background: #34397B;
+            cursor: pointer;
+        }
+        img{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        p{
+            color: white;
+            padding: 20px 0 0 20px;  
+        }
+        p:last-child{
+            color: #ADA3FF;
+            padding: 0;
+            padding-left: 20px;
+        }
+        h2{
+            color: white;
+            font-size: 50px;
+            font-weight: lighter;
+            margin-bottom: 0;
+            padding-left: 20px;
+        }
+    }
+}

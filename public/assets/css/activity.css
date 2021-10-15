@@ -1,0 +1,37 @@
+.card-container {
+  width: 15%;
+  border-radius: 10px;
+  margin-top: 10px;
+  overflow: hidden; }
+  .card-container .icon {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px; }
+    .card-container .icon img {
+      margin-top: -2px; }
+  .card-container .activity {
+    background: #1D204B;
+    border-radius: 10px;
+    position: relative;
+    margin-top: -43px;
+    padding-bottom: 1px; }
+    .card-container .activity:hover {
+      background: #34397B;
+      cursor: pointer; }
+    .card-container .activity img {
+      position: absolute;
+      top: 20px;
+      right: 20px; }
+    .card-container .activity p {
+      color: white;
+      padding: 20px 0 0 20px; }
+    .card-container .activity p:last-child {
+      color: #ADA3FF;
+      padding: 0;
+      padding-left: 20px; }
+    .card-container .activity h2 {
+      color: white;
+      font-size: 50px;
+      font-weight: lighter;
+      margin-bottom: 0;
+      padding-left: 20px; }
