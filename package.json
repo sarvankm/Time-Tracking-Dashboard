@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "node-sass": "node-sass --watch public/assets/scss/activity.scss public/assets/css/activity.css"
+    "node-sass": "node-sass --watch public/assets/scss/report.scss public/assets/css/report.css"
   },
   "eslintConfig": {
     "extends": [

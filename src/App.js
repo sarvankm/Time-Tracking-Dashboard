@@ -1,15 +1,16 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import Activity from './components/Activity';
 import Report from './components/Report';
 import data from './data.json'
 import './app.css'
 const App = () => {
     const [category, setCategory] = useState("weekly");
-    let activity='';
+    let activity = '';
     switch (category) {
         case 'daily':
-             activity = data.map((elem) => (
+            activity = data.map((elem) => (
                 <Activity
+                    key={elem.title}
                     title={elem.title}
                     current={elem.timeframes.daily.current}
                     previous={elem.timeframes.daily.previous}
@@ -17,8 +18,9 @@ const App = () => {
             ));
             break;
         case 'weekly':
-             activity = data.map((elem) => (
+            activity = data.map((elem) => (
                 <Activity
+                    key={elem.title}
                     title={elem.title}
                     current={elem.timeframes.weekly.current}
                     previous={elem.timeframes.weekly.previous}
@@ -26,8 +28,9 @@ const App = () => {
             ));
             break;
         case 'monthly':
-             activity = data.map((elem) => (
+            activity = data.map((elem) => (
                 <Activity
+                    key={elem.title}
                     title={elem.title}
                     current={elem.timeframes.monthly.current}
                     previous={elem.timeframes.monthly.previous}
@@ -37,14 +40,14 @@ const App = () => {
         default:
             break;
     }
-    
+
     return (
         <div className='container'>
-            <Report setCategory={setCategory}/>
-            <div className='cards' style={{width:'70%',display:'flex',flexWrap:'wrap'}}>
-            {activity}
+            <Report setCategory={setCategory} />
+            <div className='cards' style={{ width: '70%', display: 'flex', flexWrap: 'wrap' }}>
+                {activity}
             </div>
-            
+
         </div>
     );
 }

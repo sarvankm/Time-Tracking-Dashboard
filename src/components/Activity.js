@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from 'react';
 
-const Activity = ({ title, category, current, previous }) => {
+const Activity = ({ title, current, previous }) => {
     const [activity, setActivity] = useState({});
     const obj = [{
         title: 'Work',
@@ -33,7 +33,7 @@ const Activity = ({ title, category, current, previous }) => {
         image: 'icon-self-care.svg'
     }
     ]
-    useEffect((e) => {
+    useEffect(() => {
     const act = obj.filter((elem) =>elem.title === title)
     setActivity(...act)
     }, []);
